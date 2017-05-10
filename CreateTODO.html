@@ -13,11 +13,25 @@
 	</head>
 
 	<body>
-		<h1 class="text-center">Write TODO information and click Create.</h1>
-		<p class="text-center"> <button class="btn btn-success" type="button">Create</button> </p>
-		<p class="text-center">
-			<button class="btn btn-success" onclick="location.href='Homepage.html'" type="button">Go back</button>
-		</p>
+	<div class="container fluid">
+
+			<h1 class="col-lg-12 col-md-12 col-xs-12">Fill the form to add a TODO: </h1>
+			<form>
+				  <div class="form-group">
+					<label for="TODO">TODO:</label>
+					<input type="text" class="form-control" id="TODO" maxlength="160">
+				  </div>
+				  <div class="form-group">
+					<label for="deadline">Deadline:</label>
+					<input class="form-control" id="deadline">
+				  </div>
+				  <div class="form-group">
+					<label for="percent">Prozent:</label>
+					<input type="number" class="form-control" id="percent" min="0" max="100">
+				  </div>
+			</form>
+			<a href="#" class="col-lg-6 col-md-6 col-xs-6 btn btn-success btn-md">OK</a> 
+			<button class=" col-lg-6 col-md-6 col-xs-6 btn btn-success btn-md" onclick="location.href='Homepage.html'" type="button">Go back</button>
 		
 	</body>
 </html>
