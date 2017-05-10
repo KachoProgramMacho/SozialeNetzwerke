@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>CreateTODO</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+	<div class="container fluid">
+
+			<h1 class="col-lg-12 col-md-12 col-xs-12">Fill the form to add a TODO: </h1>
+			<form method="POST">
+
+				  <div class="form-group">
+					<label for="TODO">TODO:</label>
+					<input type="text" class="form-control" id="TODO" maxlength="160">
+				  </div>
+				  <div class="form-group">
+					<label for="deadline">Deadline:</label>
+					<input class="form-control" id="deadline">
+				  </div>
+				  <div class="form-group">
+					<label for="percent">Prozent:</label>
+					<input type="number" class="form-control" id="percent" min="0" max="100">
+				  </div>
+				<button type="submit" class="col-lg-12 col-md-12 col-xs-12 btn btn-success btn-md">OK</button>
+			</form>
+
+		</div>
+	</body>
+</html>

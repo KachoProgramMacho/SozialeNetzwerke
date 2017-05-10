@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="col-lg-3 col-xs-3 col-sm-3 col-md-3 bg-danger">
+					<p class="text-center">Site map:</p>
+				</div>
+				<div class="col-lg-3 col-xs-3 col-sm-3 col-md-3 bg-warning">
+					<p class="text-center"><a href="Create">CreateTODO</a> </p>
+				</div>
+				<div class="col-lg-3 col-xs-3 col-sm-3 col-md-3  bg-warning">
+					<p class="text-center"><a href="EditTODO.html">EditTODO</a> </p>
+				</div>
+				<div class="col-lg-3 col-xs-3 col-sm-3 col-md-3 bg-warning">
+					<p class="text-center"><a href="Impressum.html">Impressum</a> </p>
+				</div>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+			<div class="row">
+				<table class="table table-striped">
+					<thead>
+						<tr class="bg-success">
+							<th>TODO </th>
+							<th>Deadline</th>
+							<th>Percentage</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Create Homepage</td>
+						<td>02.05.2017</td>
+						<td>100%</td>
+						<td><button class="btn btn-warning">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+					</tr>
+
+					<tr>
+						<td>Buy eggs</td>
+						<td>02.03.2034</td>
+						<td>0%</td>
+						<td><button class="btn btn-warning">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+					</tr>
+
+					<tr>
+						<td>Eat egg</td>
+						<td>04.04.2018</td>
+						<td>9%</td>
+						<td><button class="btn btn-warning">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+					</tr>
+
+					<tr>
+						<td>Finish bachelor degree</td>
+						<td>30.08.2018</td>
+						<td>45%</td>
+						<td><button class="btn btn-warning">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+					</tr>
+					{% for Todo in allTodos %}
+					<tr>
+						<td>{{Todo.description}}</td>
+						<td>{{Todo.deadline}}</td>
+						<td>{{Todo.percent}}</td>
+						<td><button class="btn btn-warning">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+					</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</body>
+</html>
