@@ -18,7 +18,7 @@ from django.contrib import admin
 from todo import views
 
 urlpatterns = [
-    url(r'^Create/', views.create),
-    url(r'^$',include('todo.urls')),
+
+    url(r'^',include('todo.urls')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -17,22 +17,20 @@
 
 			<h1 class="col-lg-12 col-md-12 col-xs-12">Fill the form to add a TODO: </h1>
 			<form method="POST">
-
-				  <div class="form-group">
+				<div class="form-group">
 					<label for="TODO">TODO:</label>
-					<input type="text" class="form-control" id="TODO" maxlength="160">
+					<input required type="text" name="description" class="form-control" id="TODO" maxlength="160">
 				  </div>
 				  <div class="form-group">
 					<label for="deadline">Deadline:</label>
-					<input class="form-control" id="deadline">
+					<input type="date"   required type="date" class="form-control" name="deadline" id="deadline">
 				  </div>
 				  <div class="form-group">
-					<label for="percent">Prozent:</label>
-					<input type="number" class="form-control" id="percent" min="0" max="100">
+					<label for="percent">Percent:</label>
+					<input required type="number" name="percent" class="form-control" id="percent" min="0" max="100">
 				  </div>
 				<button type="submit" class="col-lg-12 col-md-12 col-xs-12 btn btn-success btn-md">OK</button>
 			</form>
-
-		</div>
+	</div>
 	</body>
 </html>

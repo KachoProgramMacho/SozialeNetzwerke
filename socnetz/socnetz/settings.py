@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'socnetz.urls'
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'socnetz.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\\Martin\\Desktop\\DJANGOUNCHAINED\\socnetz\\todo\\htmlfiles'],
+        'DIRS': ['C:\\Users\\Martin\\Desktop\\SozNetz\\socnetz\\todo\\htmlfiles'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
